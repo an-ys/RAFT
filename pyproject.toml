@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "RAFT"
+version = "2024.12.0"
+description = "A new deep network architecture for optical flow."
+authors = ["Zachary Teed <zteed@cs.princeton.edu>"]
+readme = "README.md"
+packages = [{ include = "core" }]
+# [tool.poetry.dependencies]
+# [tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+build-alt-cuda-corr = "build_alt_cuda_corr:main"
+download_models = "download_models:main"
